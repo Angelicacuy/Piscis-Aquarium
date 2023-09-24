@@ -1,0 +1,1073 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'quicksand', sans-serif;
+    font-weight: 800;
+    height: 2000px;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-weight: 800;
+    box-shadow: black;
+}
+.logo img {
+    width: 200px;
+    height: 91px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    /* margin: auto; */
+}
+.menu{
+    float: right;
+    margin: 0px;
+}
+.menu ul {
+    top: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: right;
+    font-weight: 800;
+    
+    /* width: 100%; */
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    /* margin: auto; */
+}
+
+nav ul li a{
+    float: left;
+    color:#85ccd6;
+    font-weight: 550;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-left: 100px;
+    letter-spacing: 0.205em;
+}
+
+nav ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+nav ul li a:hover{
+    color:#4F9EA9;
+}
+
+nav ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+ nav ul li button{
+    float:right;
+    margin-top: -14px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    text-align: center;
+    min-height: 30px;
+    font-family: 'quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #5C7E9E;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+.btn{
+    background: none;
+    border: 1px solid #5C7E9E;
+    border-radius: 100px;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: relative;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.btn::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5C7E9E;
+    border-radius: 100px;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn-1::before{
+    transform: scaleY(0);
+}
+
+.btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+.wrapper2 section .banner img{
+    float:center;
+    margin: 0px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.isi h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 40px;
+    left: 400px;
+    top: 570px;
+    color: #5C7E9E;
+    font-weight: 800;
+}
+
+.isi h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 20px;
+    left: 400px;
+    top: 620px;
+    color: #5C7E9E;
+    font-weight: 400;
+}
+
+.isi h3{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 25px;
+    left: 410px;
+    top: 770px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    position: absolute;
+    font-family:  'quicksand', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    left: 300px;
+    top: 700px;
+}
+
+.container .input-box{
+    position: absolute;
+    border-color: aliceblue;
+    top: 130px;
+    height: 20px;
+    color: #5F91BF;
+    font-weight: 600;
+    padding-left: 10px;
+    left: 100px;
+}
+
+
+
+form .user-details .input-box{
+    width: calc(100%/2 - 20px);
+}
+
+.user-details .input-box input{
+    height: 40px;
+    width: 600px;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 20px;
+    border-color: #bfe5ea;
+}
+
+.user-details .input-box3 input{
+    height: 40px;
+    width: 1250px;
+    border-radius: 10px;
+
+}
+
+.user-details .input-box input:hover{
+    color: #5C7E9E;
+
+}
+
+.container .input-box2{
+    border-radius: 50px;
+    position: absolute;
+    top: 130px;
+    left: 750px;
+}
+
+.user-details .input-box2 input{
+    height: 40px;
+    width: 600px;
+    border-radius: 10px;
+
+}
+
+.user-details .input-box input{
+    padding-left: 15px;
+    font-family:  'quicksand', sans-serif;
+    vertical-align: text-top;
+
+}
+
+.container .input-box3{
+    border-radius: 50px;
+    position: absolute;
+    top: 230px;
+    left: 100px;
+}
+
+.box{
+    height: 1500px;
+    width: 1500px;
+    position: absolute;
+    z-index: -1;
+    background: #EFFFFF;
+    top: 10px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #adbfc2;
+}
+
+.ticket .input-box{
+    position: absolute;
+    border-color: aliceblue;
+    top: 400px;
+    height: 20px;
+    color: #5F91BF;
+    font-weight: 600;
+    padding-left: 10px;
+    left: 100px;
+}
+
+.ticket .input-box input{
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+    border-style: solid;
+    font-size: 20px;
+    border-color: #bfe5ea;
+}
+
+.ticket .input-box input:hover{
+    color: #5C7E9E;
+
+}
+
+.ticket .input-box input{
+    padding-left: 15px;
+    font-family:  'quicksand', sans-serif;
+    vertical-align: text-top;
+}
+
+.ticket h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 25px;
+    left: 110px;
+    top: 350px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+
+.ticket h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 110px;
+    top: 550px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+
+.ticket h3{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 25px;
+    left: 150px;
+    top: 650px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+
+.ticket .deskripsi1 h4{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 690px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+.ticket .deskripsi1 h5{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 710px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi1 h6{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 730px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket h4{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 25px;
+    left: 150px;
+    top: 790px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+
+.ticket .deskripsi2 h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 820px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi2 h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 820px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+
+.ticket .deskripsi2 h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 840px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi2 h3{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 860px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi2 h4{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 880px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket h5{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 25px;
+    left: 150px;
+    top: 940px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+.ticket .deskripsi3 h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 970px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi3 h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 990px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+.ticket .deskripsi3 h3{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1010px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+.ticket .deskripsi3 h4{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1030px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+.ticket h6{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 25px;
+    left: 150px;
+    top: 1080px;
+    color: #5C7E9E;
+    font-weight: 600;
+}
+
+.ticket .deskripsi4 h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1110px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi4 h2{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1130px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi4 h3{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1150px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.ticket .deskripsi4 h4{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1170px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+.ticket .deskripsi4 h5{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1190px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+.ticket .deskripsi4 h6{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 15px;
+    left: 150px;
+    top: 1210px;
+    color: #5C7E9E;
+    font-weight: 500;
+}
+
+.spinner1{
+    position: absolute;
+    left: 1200px;
+    top: 650px;
+}
+.spinner1 .card-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner1 .card-action .btn1{
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: #5C7E9E;
+    width: 40px;
+}
+
+.spinner1 .card-action .btn1:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.spinner1 .card-action .btn1:active{
+    transform: unset;
+}
+
+.spinner1 .card-action .counter{
+    width: 30px;
+    text-align: center;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    background-color: unset;
+    font-size: 15px;
+    color: #5C7E9E;
+}
+
+.spinner2{
+    position: absolute;
+    left: 1200px;
+    top: 800px;
+}
+.spinner2 .card-action2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner2 .card-action2 .btn1{
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: #5C7E9E;
+    width: 40px;
+}
+
+.spinner2 .card-action2 .btn1:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.spinner2 .card-action2 .btn1:active{
+    transform: unset;
+}
+
+.spinner2 .card-action2 .counter2{
+    width: 30px;
+    text-align: center;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    background-color: unset;
+    font-size: 15px;
+    color: #5C7E9E;
+}
+
+.spinner3{
+    position: absolute;
+    left: 1200px;
+    top: 950px;
+}
+.spinner3 .card-action3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner3 .card-action3 .btn1{
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: #5C7E9E;
+    width: 40px;
+}
+
+.spinner3 .card-action3 .btn1:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.spinner3 .card-action3 .btn1:active{
+    transform: unset;
+}
+
+.spinner3 .card-action3 .counter3{
+    width: 30px;
+    text-align: center;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    background-color: unset;
+    font-size: 15px;
+    color: #5C7E9E;
+}
+
+.spinner4{
+    position: absolute;
+    left: 1200px;
+    top: 1100px;
+}
+.spinner4 .card-action4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner4 .card-action4 .btn1{
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: #5C7E9E;
+    width: 40px;
+}
+
+.spinner4 .card-action4 .btn1:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.spinner4 .card-action4 .btn1:active{
+    transform: unset;
+}
+
+.spinner4 .card-action4 .counter4{
+    width: 30px;
+    text-align: center;
+    padding: 8px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    background-color: unset;
+    font-size: 15px;
+    color: #5C7E9E;
+}
+
+.container2 button{
+    top: 1600px;
+    left: 850px;
+    list-style: none;
+    width: 400px;
+    font-size: 20px;
+}
+
+.container2 .btn1{
+    background: none;
+    background-color: #5C7E9E;
+    border: 1px solid #5C7E9E;
+    border-radius: 100px;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:100px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: relative;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+    list-style: none;
+}
+
+.container2 .btn1:hover{
+    color: #fff;
+}
+
+.container2 .btn1::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5C7E9E;
+    border-radius: 100px;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.container2 .btn-2::before{
+    transform: scaleY(0);
+}
+
+.halaman4{
+    width: 100%;
+    background-color: #D3F5F8;
+    height: 300px;
+    position: absolute;
+    top: 2500px;
+}
+
+.halaman4 img{
+    position: relative;
+    width: 213px;
+    height: 91px;
+    top: 100px;
+    left: 200px;
+}
+
+.halaman4 ul{
+    position: relative;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.halaman4 ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 ul li a:hover{
+    color:black;
+}
+
+.halaman4 ul li a::before{
+    content:"";
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.halaman4 h1 {
+    left: 510px;
+    position: absolute;
+    font-size: 23px;
+    color: #5F91BF;
+    top: 80px;
+}
+
+.halaman4 .pengalaman ul{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 0px;
+    list-style: none;
+}
+
+ .halaman4 .pengalaman ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 .pengalaman ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 .pengalaman ul li a:hover{
+    color:black;
+}
+
+.halaman4 .pengalaman ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+} 
+
+ .halaman4 .pengalaman h1 {
+    left: 710px;
+    position: absolute;
+    font-size: 23px;
+    color: #5F91BF;
+    top: 80px;
+}
+
+.halaman4 .kontak h1{
+    left: 1030px;
+    top: 80px;
+}
+
+.halaman4 .kontak .location ul iframe{
+    width: 250px; 
+    height: 100px; 
+    border-style:0;  
+    position: absolute;
+    top: 10px;
+    left: 530px;
+}
+
+.halaman4 .kontak .location img{
+    left: 1300px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 120px;
+}
+
+.halaman4 .deskripsikontak img{
+    left: 1300px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 165px;
+}
+
+
+.halaman4 .deskripsikontak h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -90px;
+    position: relative;
+    text-align: left;
+    width: 380px;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak h2{
+    font-size: 13px;
+    left: 1350px;
+    top: -80px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    color: #5F91BF;
+    font-weight: 500;
+}
+
+.halaman4 .kontak .deskripsikontak2 img{
+    left: 1305px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 200px;
+}
+
+.halaman4 .deskripsikontak2 h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -63px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    font-weight: 500;
+}
+
+.halaman4 .kontak .deskripsikontak3 img{
+    left: 1295px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 220px;
+}
+
+.halaman4 .deskripsikontak3 h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -45px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak3 ul{
+    position: absolute;
+    margin-left: 1340px;
+    margin-top: -55px;
+    list-style: none;
+}
+
+ .halaman4 .deskripsikontak3 ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+    top: 30px;
+}
+
+.halaman4 .deskripsikontak3 ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 .deskripsikontak3 ul li a:hover{
+    color:black;
+}
+
+.halaman4 .deskripsikontak3 ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+} 
+
+
+

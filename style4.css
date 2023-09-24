@@ -1,0 +1,481 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'quicksand', sans-serif;
+    font-weight: 800;
+    height: 800px;
+    background: #EFFFFF;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-weight: 800;
+    box-shadow: black;
+}
+
+.logo img {
+    width: 200px;
+    height: 91px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    /* margin: auto; */
+}
+.menu{
+    float: right;
+    margin: 0px;
+}
+.menu ul {
+    top: 50px;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: right;
+    font-weight: 800;
+    
+    /* width: 100%; */
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    /* margin: auto; */
+}
+
+nav ul li a{
+    float: left;
+    color:#85ccd6;
+    font-weight: 550;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-left: 100px;
+    letter-spacing: 0.205em;
+}
+
+nav ul li a{
+    background: none;
+    font-family:  'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+nav ul li a:hover{
+    color:#4F9EA9;
+}
+
+nav ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+ nav ul li button{
+    float:right;
+    margin-top: -14px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    text-align: center;
+    min-height: 30px;
+    font-family:  'quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #5C7E9E;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+.btn{
+    background: none;
+    border: 1px solid #5C7E9E;
+    border-radius: 100px;
+    font-family: 'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: relative;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.btn::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5C7E9E;
+    border-radius: 100px;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn-1::before{
+    transform: scaleY(0);
+}
+
+.btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+.box{
+    width: 700px;
+    height: 300px;
+    top: 300px;
+    left: 600px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.pesan h1{
+    position: absolute;
+    left: 750px;
+    top: 400px;
+    font-weight: 800;
+    color: #5C7E9E;
+}
+
+.pesan h2{
+    position: absolute;
+    left: 790px;
+    top: 450px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #5C7E9E;
+}
+
+.halaman4{
+    width: 100%;
+    background-color: #D3F5F8;
+    height: 300px;
+    position: absolute;
+    top: 800px;
+}
+
+.halaman4 img{
+    position: relative;
+    width: 213px;
+    height: 91px;
+    top: 100px;
+    left: 200px;
+}
+
+.halaman4 ul{
+    position: relative;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.halaman4 ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 ul li a:hover{
+    color:black;
+}
+
+.halaman4 ul li a::before{
+    content:"";
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.halaman4 h1 {
+    left: 510px;
+    position: absolute;
+    font-size: 23px;
+    color: #5F91BF;
+    top: 80px;
+}
+
+.halaman4 .pengalaman ul{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 0px;
+    list-style: none;
+}
+
+ .halaman4 .pengalaman ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 .pengalaman ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 .pengalaman ul li a:hover{
+    color:black;
+}
+
+.halaman4 .pengalaman ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+} 
+
+ .halaman4 .pengalaman h1 {
+    left: 710px;
+    position: absolute;
+    font-size: 23px;
+    color: #5F91BF;
+    top: 80px;
+}
+
+.halaman4 .kontak h1{
+    left: 1030px;
+    top: 80px;
+}
+
+.halaman2 .kontak .location{
+    width: 100%;
+}
+.halaman4 .kontak .location ul iframe{
+    width: 250px; 
+    height: 100px; 
+    border-style:0;  
+    position: absolute;
+    top: 10px;
+    left: 530px;
+}
+
+.halaman4 .kontak .location img{
+    left: 1300px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 120px;
+}
+
+.halaman4 .deskripsikontak img{
+    left: 1300px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 165px;
+}
+
+
+.halaman4 .deskripsikontak h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -90px;
+    position: relative;
+    text-align: left;
+    width: 380px;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak h2{
+    font-size: 13px;
+    left: 1350px;
+    top: -80px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    color: #5F91BF;
+    font-weight: 500;
+}
+
+.halaman4 .kontak .deskripsikontak2 img{
+    left: 1305px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 200px;
+}
+
+.halaman4 .deskripsikontak2 h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -63px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    font-weight: 500;
+}
+
+.halaman4 .kontak .deskripsikontak3 img{
+    left: 1295px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 220px;
+}
+
+.halaman4 .deskripsikontak3 h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -45px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak3 ul{
+    position: absolute;
+    margin-left: 1340px;
+    margin-top: -55px;
+    list-style: none;
+}
+
+ .halaman4 .deskripsikontak3 ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+    top: 30px;
+}
+
+.halaman4 .deskripsikontak3 ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 .deskripsikontak3 ul li a:hover{
+    color:black;
+}
+
+.halaman4 .deskripsikontak3 ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+} 

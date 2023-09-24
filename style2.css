@@ -1,0 +1,1218 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'quicksand', sans-serif;v
+    font-weight: 800;
+    background-color: #FDFAF1;
+    height: 8000px;
+    width: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 200px;
+    height: 91px;
+    float: left;
+    margin-left: 30px;
+    position: relative;
+    /* margin: auto; */
+}
+
+.menu {
+    float: right;
+    margin: auto;
+    margin-top: 0px;
+    font-weight: 800;
+    /* width: 100%; */
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+nav ul li{
+    float: left;
+    /* margin: auto; */
+}
+
+nav ul li a{
+    float: left;
+    color:#85ccd6;
+    font-weight: 550;
+    text-align: center;
+    padding: 0px 5px 0px 5px;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-top: 40px;
+    margin-left: 100px;
+    letter-spacing: 0.205em;
+}
+
+nav ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+nav ul li a:hover{
+    color:#4F9EA9;
+}
+
+nav ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+ nav ul li button{
+    float:right;
+    margin-top: -14px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:  center;
+    text-align: center;
+    min-height: 30px;
+    font-family: 'quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #5C7E9E;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+
+.btn{
+    background: none;
+    border: 1px solid #5C7E9E;
+    border-radius: 100px;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: relative;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+
+.btn:hover{
+    color: white;
+}
+
+.btn::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5C7E9E;
+    border-radius: 100px;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.btn-1::before{
+    transform: scaleY(0);
+}
+
+.btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+.bagian {
+    position: absolute;
+    height: 35px;
+    top: 90px;
+    left: 0px;
+    width: 100%;
+    background: #b5e2e8;
+}
+
+.bagian1 button {
+    z-index: 1;
+    top: 15px;
+    left: 700px;
+    background: none;
+    border: 1px solid #5C7E9E;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: absolute;
+    letter-spacing: 20.5%;
+    height: 35px;
+    font-weight: 500;
+    color: #85ccd6;
+}
+
+.bagian1  .btn1:hover{
+    color: white;
+}
+
+.bagian .bagian1 .btn1::before{
+    content:"";
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    background: #5C7E9E;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.bagian .bagian1 .btn-1::before{
+    transform: scaleY(0);
+}
+
+.bagian .bagian1 .btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+.bagian2 button {
+    z-index: 1;
+    top: 15px;
+    left: 900px;
+    background: none;
+    border: 1px solid #5C7E9E;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: absolute;
+    letter-spacing: 20.5%;
+    height: 35px;
+    font-weight: 500;
+    color: #85ccd6;
+}
+
+.bagian2  .btn1:hover{
+    color: white;
+}
+
+.bagian .bagian2 .btn1::before{
+    content:"";
+    position: absolute;
+    left: -5;
+    top: -1;
+    width: 200px;
+    height: 35px;
+    background: #5C7E9E;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.bagian .bagian2 .btn-1::before{
+    transform: scaleY(0);
+}
+
+.bagian .bagian2 .btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+.bagian3 button {
+    z-index: 1;
+    top: 15px;
+    left: 1100px;
+    background: none;
+    border: 1px solid #5C7E9E;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: absolute;
+    letter-spacing: 20.5%;
+    height: 35px;
+    font-weight: 500;
+    color: #85ccd6;
+}
+
+.bagian3  .btn1:hover{
+    color: white;
+}
+
+.bagian .bagian3 .btn1::before{
+    content:"";
+    position: absolute;
+    left: -5;
+    top: -1;
+    width: 200px;
+    height: 35px;
+    background: #5C7E9E;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.bagian .bagian3 .btn-1::before{
+    transform: scaleY(0);
+}
+
+.bagian .bagian3 .btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+
+
+
+.wrapper2 section .kolom img{
+    float:center;
+    margin: 0px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.kolom h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 50px;
+    left: 400px;
+    top: 400px;
+    color: white;
+}
+
+.kolom h2{
+    height: 28px;
+    width: 1000px;
+    left: 750px;
+    top: 648px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: justify;
+    position: absolute;
+    color:#5F91BF;
+    ;
+}
+
+.kolom h3{
+    position: absolute;
+    height: 46px;
+    width: 1300px;
+    left: 650px;
+    top: 687px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: justify;
+    color: #304A7D;
+}
+
+.kolom h4{
+    position: absolute;
+    height: 84px;
+    width: 1300px;
+    left: 350px;
+    top: 744px;
+    color: #5F91BF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+}
+
+.kolom h5{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 1000px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+.kolom h6{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 1100px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.kolom2 h1{
+    height: 34px;
+    width: 530px;
+    left: 400px;
+    top: 1350px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+
+.kolom2 img{
+    position: relative;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 500px;
+    border-radius: 40px;
+}
+
+.kolom3 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 1000px;
+    top: 1500px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+.kolom3 h2{
+    position: absolute;
+    height: 112px;
+    width: 586px;
+    left: 1000px;
+    top: 1600px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.kolom3 h3{
+    position: absolute;
+    height: 34px;
+    width: 530px;
+    left: 1000px;
+    top: 1770px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+
+}
+
+.kolom3 img{
+    position: absolute;
+    height: 326px;
+    width: 438px;
+    left: 400px;
+    top: 1500px;
+    border-radius: 40px;
+}
+
+.kolom4 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 2000px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+.kolom4 h2{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 2100px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.kolom4 h3{
+    height: 34px;
+    width: 530px;
+    left: 400px;
+    top: 2330px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.kolom4 img{
+    position: relative;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 1070px;
+    border-radius: 40px;
+}
+
+.kolom5 h1{
+    position: absolute;
+    height: 46px;
+    width: 500px;
+    left: 1000px;
+    top: 2500px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+.kolom5 h2{
+    position: absolute;
+    height: 112px;
+    width: 586px;
+    left: 1000px;
+    top: 2600px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.kolom5 h3{
+    position: absolute;
+    height: 34px;
+    width: 530px;
+    left: 1000px;
+    top: 2830px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+
+}
+
+.kolom5 img{
+    position: absolute;
+    height: 326px;
+    width: 438px;
+    left: 400px;
+    top: 2530px;
+    border-radius: 40px;
+}
+
+.wrapper2 section .deskripsi img{
+    float:center;
+    margin: 0px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 3200px;
+}
+
+.deskripsi h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 50px;
+    left: 400px;
+    top: 3500px;
+    color: white;
+}
+
+.deskripsi2 img{
+    position: absolute;
+    top: 3900px;
+    left: 400px;
+}
+
+.deskripsi2 h1{
+    position: absolute;
+    height: 112px;
+    width: 586px;
+    left: 950px;
+    top: 3900px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.deskripsi2 h2{
+    position: absolute;
+    height: 46px;
+    width: 800px;
+    left: 950px;
+    top: 3950px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+.deskripsi2 h3{
+    position: absolute;
+    height: 34px;
+    width: 600px;
+    left: 950px;
+    top: 4100px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.deskripsi2 h4{
+    position: absolute;
+    height: 34px;
+    width: 530px;
+    left: 960px;
+    top: 4320px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.deskripsi2 .btn1{
+    top: 4370px;
+    left: 970px;
+    background: none;
+    border: 1px solid #5C7E9E;
+    border-radius: 100px;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: absolute;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+
+.deskripsi2 .btn1:hover{
+    color: white;
+}
+
+.deskripsi2 .btn1::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5C7E9E;
+    border-radius: 100px;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.deskripsi2 .btn-1::before{
+    transform: scaleY(0);
+}
+
+.deskripsi2 .btn-1:hover::before{
+    transform: scaleY(1);
+}
+
+.halaman4{
+    width: 100%;
+    background-color: #D3F5F8;
+    height: 300px;
+    position: absolute;
+    top: 8000px;
+}
+
+.halaman4 img{
+    position: relative;
+    width: 213px;
+    height: 91px;
+    top: 100px;
+    left: 200px;
+}
+
+.halaman4 ul{
+    position: relative;
+    margin-left: 500px;
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+}
+
+.halaman4 ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 ul li a{
+    background: none;
+    font-family:'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 ul li a:hover{
+    color:black;
+}
+
+.halaman4 ul li a::before{
+    content:"";
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.halaman4 h1 {
+    left: 510px;
+    position: absolute;
+    font-size: 23px;
+    color: #5F91BF;
+    top: 80px;
+}
+
+.halaman4 .pengalaman ul{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 0px;
+    list-style: none;
+}
+
+ .halaman4 .pengalaman ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 .pengalaman ul li a{
+    background: none;
+    font-family:'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 .pengalaman ul li a:hover{
+    color:black;
+}
+
+.halaman4 .pengalaman ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+} 
+
+ .halaman4 .pengalaman h1 {
+    left: 710px;
+    position: absolute;
+    font-size: 23px;
+    color: #5F91BF;
+    top: 80px;
+}
+
+.halaman4 .kontak h1{
+    left: 1030px;
+    top: 80px;
+}
+
+.halaman2 .kontak .location{
+    width: 100%;
+}
+.halaman4 .kontak .location ul iframe{
+    width: 250px; 
+    height: 100px; 
+    border-style:0;  
+    position: absolute;
+    top: 10px;
+    left: 530px;
+}
+
+.halaman4 .kontak .location img{
+    left: 1300px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 120px;
+}
+
+.halaman4 .deskripsikontak img{
+    left: 1300px;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 165px;
+}
+
+
+.halaman4 .deskripsikontak h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -90px;
+    position: relative;
+    text-align: left;
+    width: 380px;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak h2{
+    font-size: 13px;
+    left: 1350px;
+    top: -80px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    color: #5F91BF;
+    font-weight: 500;
+}
+
+.halaman4 .kontak .deskripsikontak2 img{
+    left: 1305px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 200px;
+}
+
+.halaman4 .deskripsikontak2 h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -63px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    font-weight: 500;
+}
+
+.halaman4 .kontak .deskripsikontak3 img{
+    left: 1295px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 220px;
+}
+
+.halaman4 .deskripsikontak3 h1{
+    font-size: 13px;
+    left: 1350px;
+    top: -45px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak3 ul{
+    position: absolute;
+    margin-left: 1340px;
+    margin-top: -55px;
+    list-style: none;
+}
+
+ .halaman4 .deskripsikontak3 ul li a{
+    list-style: none;
+    float: left;
+    margin-top:5px;
+    color:#5F91BF;
+    font-weight: 550;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 28px;
+    line-height: 100%;
+    margin-left: 10px;
+    letter-spacing: 0.205em;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.halaman4 .deskripsikontak3 ul li a{
+    background: none;
+    font-family: 'quicksand', sans-serif;
+    min-width: 200px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.halaman4 .deskripsikontak3 ul li a:hover{
+    color:black;
+}
+
+.halaman4 .deskripsikontak3 ul li a::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}   
+
+.wrapper2 section .deskripsi3 img{
+    float:center;
+    margin: 0px;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 4600px;
+}
+
+.deskripsi3 h1{
+    font-weight: bolder;
+    position: absolute;
+    font-size: 50px;
+    left: 400px;
+    top: 4900px;
+    color: white;
+}
+
+section .deskripsi3 .kolom1 img{
+    position: absolute;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 5250px;
+    border-radius: 40px;
+}
+
+section .deskripsi3 .kolom1 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 5250px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+section .deskripsi3 .kolom1 h2{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 5350px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+section .deskripsi3 .kolom2 img{
+    position: absolute;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 5750px;
+    border-radius: 40px;
+}
+
+section .deskripsi3 .kolom2 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 5750px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+section .deskripsi3 .kolom2 h2{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 5850px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+section .deskripsi3 .kolom3 img{
+    position: absolute;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 6250px;
+    border-radius: 40px;
+}
+
+section .deskripsi3 .kolom3 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 6250px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+section .deskripsi3 .kolom3 h2{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 6350px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+section .deskripsi3 .kolom4 img{
+    position: absolute;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 6750px;
+    border-radius: 40px;
+}
+
+section .deskripsi3 .kolom4 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 6750px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+section .deskripsi3 .kolom4 h2{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 6850px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+section .deskripsi3 .kolom5 img{
+    position: absolute;
+    height: 330px;
+    width: 444px;
+    left: 1150px;
+    top: 7250px;
+    border-radius: 40px;
+}
+
+section .deskripsi3 .kolom5 h1{
+    position: absolute;
+    height: 46px;
+    width: 1000px;
+    left: 400px;
+    top: 7250px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    text-align: left;
+    color: #304A7D;
+}
+
+section .deskripsi3 .kolom5 h2{
+    position: absolute;
+    height: 196px;
+    width: 600px;
+    left: 400px;
+    top: 7350px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: justify;
+    color: #5F91BF;
+}
+
+.deskripsi3 h2{
+    position: absolute;
+    top: 7700px;
+    left: 650px;
+    font-size: 30px;
+    color: #304A7D ;
+}
+.deskripsi3 h3{
+    position: absolute;
+    top: 7750px;
+    left: 830px;
+    font-size: 20px;
+    color: #5F91BF ;
+}
+
+.deskripsi3 .btn1{
+    top: 7790px;
+    left: 880px;
+    background: none;
+    border: 1px solid #5C7E9E;
+    border-radius: 100px;
+    font-family:'quicksand', sans-serif;
+    text-transform: normal;
+    padding:10px 20px;
+    min-width:200px;
+    cursor:pointer; 
+    transition: color 0.4s linear;
+    position: absolute;
+    border-radius: 100px;
+    letter-spacing: 20.5%;
+}
+
+.deskripsi3 .btn1:hover{
+    color: white;
+}
+
+.deskripsi3 .btn1::before{
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #5C7E9E;
+    border-radius: 100px;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+
+.deskripsi3 .btn-1::before{
+    transform: scaleY(0);
+}
+
+.deskripsi3 .btn-1:hover::before{
+    transform: scaleY(1);
+}
+

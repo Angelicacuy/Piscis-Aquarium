@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piscis Aquarium</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><img src="images\Logo.png" alt="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href= "index.html">Beranda</a></li>
+                    <li><a href= "pengalaman.html">Pengalaman</a></li>
+                    <li><a href= "kontak.html">Kontak Kami</a></li>
+                    <li><a href= "tiket.html"><button class="btn btn-1">Pesan Tiket</button></a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <div class="wrapper2">
+        <section id="Beranda">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="Images\berandaimg.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images\berandaimg2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images\berandaimg3.jpeg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="Images\berandaimg4.jpeg" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            }, 5000);
+            </script>
+            <div class="kolom">
+                <p class="deskripsi">Nikmati</p>
+                <h2>Dunia Penuh Keajaiban</h2>
+                <ul style="list-style: none;">
+                    <li><a href= "tiket.html"><button class="btn1 btn-2">Pesan Tiket</button></a></li>
+                </ul>
+            </div>
+            <div class="halaman">
+                <img src="Images\berandaimage.jpg" alt="">
+                <h1>Selamat datang di</h1>
+                <h2>Piscis Aquarium</h2>
+                <h3>Piscis Aquarium adalah akuarium indoor terbesar di Indonesia 
+                    dan dunia, Di sekitar kawasan konservasi seluas satu hektar
+                    ini, Anda bisa melihat lebih dari 3.500 spesies hewan akuatik 
+                    dan non-akuatik. Berinteraksi langsung dengan hewan-hewan
+                    di sini dengan menyentuh, membelai, dan memberi mereka 
+                    makan. Dipandu oleh penjaga hewan berpengalaman, Anda 
+                    akan mendapatkan informasi menarik tentang hewan-hewan
+                    di sini. </h3>
+            </div>
+            <div class="halaman2">
+                <img src="Images\berandaimg5.png" alt="">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+            <div class="halaman3">
+                <img src= "Images\berandaimage6.png" alt="">
+                <h1>Rasakan Pengalaman Lebih Dekat dengan</h1>
+                <h2>Hewan-Hewan</h2>
+                <h3>Laut Eksotis</h3>
+                <h4>Siap Melihat Atraksi dan Melakukan Aktifitas Diving?</h4>
+                <ul>
+                    <li><a href= "pengalaman.html"><button class="btn1 btn-3">Atraksi Hewan</button></a></li>
+                </ul>
+            </div>
+            <div class="button2">
+                <ul>
+                    <li><a href= "pengalaman.html"><button class="btn1 btn-4">Funtasy Diving</button></a></li> 
+                </ul>
+            </div>
+            <div class="halaman4">
+                <img src="Images\Logo.png" alt="">
+                <h1>Halaman</h1>
+                <ul>
+                    <li><a href= "Index.html">Beranda</a></li>
+                    <li><a href= "pengalaman.html">Pengalaman</a></li>
+                    <li><a href= "kontak.html">Kontak Kami</a></li>
+                </ul>
+                <div class="pengalaman">
+                    <h1>Pengalaman</h1>
+                    <ul>
+                        <li><a href= "pengalaman.html">Atraksi Hewan</a></li>
+                        <li><a href= "pengalaman.html">Funtasy Diving</a></li>
+                        <li><a href= "pengalaman.html">Fakta-fakta</a></li>
+                    </ul>
+                </div>
+
+                <div class="kontak">
+                    <h1>Kontak Kami</h1>
+                    <div class="location">
+                        <img src="Images\footerlocation.png" alt="">
+                        
+                        <ul>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3013885422115!2d106.64679915067373!3d-6.2239335954724675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb20a9906e13%3A0xf75c5296d0a385e4!2sUniversitas%20Bina%20Nusantara%2C%20Kampus%20Alam%20Sutera!5e0!3m2!1sid!2sid!4v1652949161167!5m2!1sid!2sid"></iframe>
+                        </ul>
+                    </div>
+                    <div class="deskripsikontak">
+                        <h1>Binus University Alam Sutera, Kav 21, Alam Sutera Jalan Jalur Sutera Barat Panunggangan Timur, RT.001/RW.004, Panunggangan, Kec. Pinang, Kota Tangerang, Banten 15143</h1>
+                        <img src="Images\footertlfn.png" alt ="">
+                        <h2>087324873278</h2>
+                    </div>  
+                    <div class="deskripsikontak2">
+                        <img src="Images\footermsg.png" alt="">
+                        <h1>Piscis@aquariumid.com</h1>
+                    </div>
+                    <div class="deskripsikontak3">
+                        <img src="Images\footerig.png" alt="">
+                        <ul>
+                            <li><a href= "https://instagram.com/angelica_cuy?igshid=YmMyMTA2M2Y=>@angelica_cuy">@angelica_cuy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
